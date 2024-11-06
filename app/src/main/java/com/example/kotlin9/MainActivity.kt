@@ -46,7 +46,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Name: $name",
         modifier = modifier.padding(8.dp),
         fontSize = 20.sp,
-        color = MaterialTheme.colorScheme.primary // Используем цвет из темы
+        color = MaterialTheme.colorScheme.secondary // Используем цвет из темы
     )
 }
 
