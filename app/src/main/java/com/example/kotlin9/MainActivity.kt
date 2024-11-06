@@ -46,7 +46,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Name: $name",
         modifier = modifier.padding(8.dp),
         fontSize = 20.sp,
-        color = MaterialTheme.colorScheme.secondary // Используем цвет из темы
+        color = MaterialTheme.colorScheme.secondary
     )
 }
 
@@ -56,7 +56,7 @@ fun LastName(lastName: String, modifier: Modifier = Modifier) {
         text = "Last Name: $lastName",
         modifier = modifier.padding(8.dp),
         fontSize = 20.sp,
-        color = MaterialTheme.colorScheme.secondary // Используем второй цвет из темы
+        color = MaterialTheme.colorScheme.secondary
     )
 }
 
@@ -66,10 +66,10 @@ fun Group(group: String, modifier: Modifier = Modifier) {
         text = "Group: $group",
         modifier = modifier
             .padding(8.dp)
-            .background(color = MaterialTheme.colorScheme.tertiary.copy(alpha = 0.2f)) // Используем третий цвет из темы
+            .background(color = MaterialTheme.colorScheme.tertiary.copy(alpha = 0.2f))
             .padding(8.dp),
         fontSize = 20.sp,
-        color = MaterialTheme.colorScheme.tertiary // Используем третий цвет для текста
+        color = MaterialTheme.colorScheme.tertiary
     )
 }
 
@@ -83,7 +83,7 @@ fun MainContent(name: String, lastName: String, group: String, modifier: Modifie
     ) {
         Greeting(name = name)
         LastName(lastName = lastName)
-        Group(group = group) // Передаем модификатор по умолчанию
+        Group(group = group)
     }
 }
 
